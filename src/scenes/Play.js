@@ -125,7 +125,7 @@ class Play extends Phaser.Scene {
             this.updatetime();
             if (this.p1Score > highScore) {
                 highScore = this.p1Score;
-                this.scoreRight.text = 'HiScore:' + highScore;
+                this.scoreRight.text = 'HS:' + highScore;
             }
         }
 
@@ -153,7 +153,7 @@ class Play extends Phaser.Scene {
         }
         //Check if game is over, if it is, display 0 time left
         if (this.gameOver) {
-            this.displayTime.text = 'Time: 0'
+            this.displayTime.text = 'T: 0'
         }
     }
 
@@ -214,7 +214,7 @@ class Play extends Phaser.Scene {
         gameTime -= 16.6666;
         if (gameTime >= 16.666) {
 
-            this.displayTime.text = 'Time:' + gameTime / 1000;
+            this.displayTime.text = 'T:' + gameTime / 1000;
         }
     }
 }
